@@ -1,0 +1,10 @@
+name: Laravel Local
+values:
+  - key: base_url
+    value: 'http://localhost:8000'
+    enabled: true
+    type: default
+  - key: recipe_id
+    value: '1'
+    enabled: true
+    type: default

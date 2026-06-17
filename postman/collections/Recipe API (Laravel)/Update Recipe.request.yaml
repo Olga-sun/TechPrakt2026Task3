@@ -1,0 +1,17 @@
+$kind: http-request
+name: Update Recipe
+description: Update an existing recipe by its ID.
+method: PATCH
+url: '{{base_url}}/api/recipes/{{recipe_id}}'
+order: 4000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "title": "Борщ оновлений",
+      "description": "Оновлений опис рецепту",
+      "cook_time": 45
+    }

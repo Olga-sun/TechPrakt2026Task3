@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://127.0.0.1:8000/api/recipes
+method: POST
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+        "title": "Яблучна шарлотка",
+        "description": "Нарізати яблука, залити тістом, випікати 40 хвилин.",
+        "cook_time": 60
+    }
+order: 2000

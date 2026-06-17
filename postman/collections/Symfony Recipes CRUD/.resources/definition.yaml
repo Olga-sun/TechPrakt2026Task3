@@ -1,0 +1,2 @@
+$kind: collection
+description: Колекція для тестування CRUD операцій сутності Recipe (Symfony)

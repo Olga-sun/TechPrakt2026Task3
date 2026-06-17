@@ -1,0 +1,17 @@
+$kind: http-request
+name: Create Recipe
+description: Create a new recipe.
+method: POST
+url: '{{base_url}}/api/recipes'
+order: 2000
+headers:
+  - key: Content-Type
+    value: application/json
+body:
+  type: json
+  content: |-
+    {
+      "title": "Борщ",
+      "description": "Традиційний український суп",
+      "cook_time": 60
+    }

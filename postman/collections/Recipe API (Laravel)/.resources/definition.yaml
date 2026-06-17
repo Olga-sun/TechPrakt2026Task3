@@ -1,0 +1,6 @@
+$kind: collection
+name: Recipe API (Laravel)
+description: REST API for managing recipes, implemented in Laravel. Base URL is http://localhost:8000/api
+variables:
+  - key: base_url
+    value: 'http://localhost:8000'

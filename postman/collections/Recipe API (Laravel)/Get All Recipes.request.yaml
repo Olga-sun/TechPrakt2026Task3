@@ -1,0 +1,6 @@
+$kind: http-request
+name: Get All Recipes
+description: Retrieve a list of all recipes.
+method: GET
+url: '{{base_url}}/api/recipes'
+order: 1000

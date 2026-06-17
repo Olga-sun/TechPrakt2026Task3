@@ -1,0 +1,6 @@
+$kind: http-request
+name: Get Recipe by ID
+description: Retrieve a single recipe by its ID.
+method: GET
+url: '{{base_url}}/api/recipes/{{recipe_id}}'
+order: 3000

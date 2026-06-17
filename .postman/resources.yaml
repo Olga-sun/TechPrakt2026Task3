@@ -1,0 +1,13 @@
+# Use this workspace to collaborate
+workspace:
+  id: 7368c3cf-7bfe-4147-84c2-8e756bd12eaf
+
+cloudResources:
+  collections:
+    ..\postman\collections\Symfony Recipes CRUD: ffc07373-e71b-4d7f-8ff7-828786b42383
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

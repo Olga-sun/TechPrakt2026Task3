@@ -1,0 +1,6 @@
+$kind: http-request
+name: Delete Recipe
+description: Delete a recipe by its ID.
+method: DELETE
+url: '{{base_url}}/api/recipes/{{recipe_id}}'
+order: 5000
