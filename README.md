@@ -25,10 +25,14 @@ composer install
 
 Для розробки серверної частини проєкту було використано фреймворк **Laravel**. Нижче наведено структуру репозиторію та результати тестування працездатності створеного API.
 
+## 🛠️ Підтвердження реалізації бекенду на Laravel
+
+Для розробки серверної частини проєкту було використано фреймворк **Laravel**. Нижче наведено структуру репозиторію та результати тестування працездатності створеного API.
+
 ### 1. Структура проєкту
 У корені репозиторію виділено окрему директорію `laravel/`, яка містить усю логіку фреймворку, конфігурації та інструкції з розгортання:
 
-![Структура репозиторію з Laravel](image_564228.png)
+<img width="900" alt="Структура репозиторію з Laravel" src="https://github.com/user-attachments/assets/f4daa9c0-2ac1-4d72-9526-5a6883b369bd" />
 
 ---
 
@@ -37,23 +41,26 @@ composer install
 
 #### 🟢 Отримання списку всіх записів (GET)
 Запит до `GET {{base_url}}/api/recipes` повертає повний масив об'єктів із бази даних. Статус відповіді: **200 OK**.
-![GET Request - Отримання списку](image_563afb.png)
-<img width="908" height="926" alt="get" src="https://github.com/user-attachments/assets/f4daa9c0-2ac1-4d72-9526-5a6883b369bd" /><img width="941" height="954" alt="id" src="https://github.com/user-attachments/assets/015f9c77-fdb3-4efa-a29e-5cde36f607f0" />
+
+<img width="908" height="926" alt="GET Request - Отримання списку" src="https://github.com/user-attachments/assets/f4daa9c0-2ac1-4d72-9526-5a6883b369bd" />
 
 #### 🔵 Створення нового запису (POST)
 Надсилання даних через `POST {{base_url}}/api/recipes` успішно створює новий об'єкт у базі. Статус відповіді: **201 Created**.
-![POST Request - Створення запису]
-<img width="959" height="900" alt="post" src="https://github.com/user-attachments/assets/6de97ce5-dd1a-4e4f-a073-b946396314a3" />
 
+<img width="959" height="900" alt="POST Request - Створення запису" src="https://github.com/user-attachments/assets/6de97ce5-dd1a-4e4f-a073-b946396314a3" />
 
 #### 🟡 Отримання детальної інформації за ID (GET)
 Запит `GET {{base_url}}/api/recipes/{{recipe_id}}` повертає конкретну сутність за її ідентифікатором. Статус відповіді: **200 OK**.
-![GET Request - Отримання за ID](image_563e9e.png)
-<img width="941" height="954" alt="id" src="https://github.com/user-attachments/assets/756c5558-b5be-4248-b6be-6e36b3325361" />
+
+<img width="941" height="954" alt="GET Request - Отримання за ID" src="https://github.com/user-attachments/assets/756c5558-b5be-4248-b6be-6e36b3332531" />
 
 #### 🟠 Оновлення існуючих даних (PATCH)
 Запит `PATCH {{base_url}}/api/recipes/{{recipe_id}}` успішно модифікує вказані поля (наприклад, зміна назви на "Борщ оновлений"). Статус відповіді: **200 OK**.
-![PATCH Request - Оновлення даних](image_564189.png)
+
+<img width="901" height="904" alt="PATCH Request - Оновлення даних" src="https://github.com/user-attachments/assets/284796a2-9089-44cb-ae66-4f55c3375617" />
+
+---
+Виконані тести повністю підтверджують успішну інтеграцію, працездатність маршрутів (routing) та взаємодію з базою даних у межах фреймворку Laravel.
 <img width="901" height="904" alt="patch" src="https://github.com/user-attachments/assets/284796a2-9089-44cb-ae66-4f55c3375617" />
 
 ---
