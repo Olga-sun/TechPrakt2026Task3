@@ -1,0 +1,89 @@
+{
+	"info": {
+		"name": "Symfony Recipes CRUD",
+		"description": "Колекція для тестування CRUD операцій сутності Recipe (Symfony)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "1. GET All Recipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/recipes",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "recipes"]
+				}
+			}
+		},
+		{
+			"name": "2. POST Create Recipe",
+			"request": {
+				"method": "POST",
+				"header": [{"key": "Content-Type", "value": "application/json"}],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Яблучна шарлотка\",\n    \"description\": \"Нарізати яблука, залити тістом, випікати 40 хвилин.\",\n    \"cook_time\": 60\n}",
+					"options": {"raw": {"language": "json"}}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/recipes",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "recipes"]
+				}
+			}
+		},
+		{
+			"name": "3. GET One Recipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/recipes/1",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "recipes", "1"]
+				}
+			}
+		},
+		{
+			"name": "4. PATCH Update Recipe",
+			"request": {
+				"method": "PATCH",
+				"header": [{"key": "Content-Type", "value": "application/json"}],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"cook_time\": 45\n}",
+					"options": {"raw": {"language": "json"}}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/recipes/1",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "recipes", "1"]
+				}
+			}
+		},
+		{
+			"name": "5. DELETE Recipe",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/recipes/1",
+					"protocol": "http",
+					"host": ["127", "0", "0", "1"],
+					"port": "8000",
+					"path": ["api", "recipes", "1"]
+				}
+			}
+		}
+	]
+}
