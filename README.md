@@ -1,3 +1,5 @@
+<img width="959" height="900" alt="post" src="https://github.com/user-attachments/assets/cd0b19c6-c732-4df7-a503-9471e3b638ab" />
+[Uploading get.mhtml…]()
 # 💻 Практичне завдання 3: Laravel та Symfony API
 
 Цей репозиторій містить виконання лабораторної/практичної роботи зі створення API за допомогою двох популярних PHP-фреймворків: **Laravel** та **Symfony**. Також включено колекції запитів для тестування створених ендпоінтів.
@@ -39,7 +41,9 @@ composer install
 
 #### 🔵 Створення нового запису (POST)
 Надсилання даних через `POST {{base_url}}/api/recipes` успішно створює новий об'єкт у базі. Статус відповіді: **201 Created**.
-![POST Request - Створення запису](image_563e04.png)
+![POST Request - Створення запису]
+<img width="959" height="900" alt="post" src="https://github.com/user-attachments/assets/6de97ce5-dd1a-4e4f-a073-b946396314a3" />
+
 
 #### 🟡 Отримання детальної інформації за ID (GET)
 Запит `GET {{base_url}}/api/recipes/{{recipe_id}}` повертає конкретну сутність за її ідентифікатором. Статус відповіді: **200 OK**.
