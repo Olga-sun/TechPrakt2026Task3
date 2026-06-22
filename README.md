@@ -65,3 +65,5 @@ composer install
 
 ---
 Виконані тести повністю підтверджують успішну інтеграцію, працездатність маршрутів (routing) та взаємодію з базою даних у межах фреймворку Laravel.
+
+https://github.com/Olga-sun/TechPrakt2026Task3/blob/main/scr/laravel/del.png
